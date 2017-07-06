@@ -1,0 +1,17 @@
+          
+
+Mitarbeiter alle Aufgaben
+
+ $fuelleList2 = $meinObjekt->ausgabeAlleAufgaben();
+
+<?php {
+                echo "<div style=\"border: 2px solid green; height:500px\">";
+                echo "<br> <form action=\"select.html\"> <label>Mitarbeiter: <select name=\"top5\" size=\"5\">";
+
+                for ($i = 0; $i < $max; $i++) {
+                    echo "<option>" . $fuelleList2[$i]["vorname"] . "  " . $fuelleList2[$i]["nachname"] . "</option>";
+                }
+                echo ' </label> </form>';
+                echo "</div>";
+            }
+            ?>
